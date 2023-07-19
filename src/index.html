@@ -9,17 +9,88 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="EBAC">
             <p class="hero__text"> 
-                Contagem regressiva para o aniversário! Começa em 01d 24h 20m 10s
+                Contagem regressiva para o aniversário! <br>
+                <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Madero - Patio Brasil - Brasília
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 42,90
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        20/07/2023 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Confirme sua presença!
+                </a>
+            </div>
         </div>
     </header>
 
+    <section class="event event--aniversario">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Aniversariante</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit magnam repudiandae tenetur ab cupiditate dolore at ipsa voluptates? Numquam quisquam.
+                </p>
+            </div>
+            <img class="event__image" src="./images/madero_aniversario_01.jpg" alt="Aniversariante">
+        </div>
+    </section>
+    <section class="event event--cardapio event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Cardapio</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit magnam repudiandae tenetur ab cupiditate dolore at ipsa voluptates? Numquam quisquam.
+                </p>
+            </div>
+            <img class="event__image" src="./images/cardarpio.jpg" alt="Aniversariante">
+        </div>
+    </section>
+    <section class="event event--bebidas">
+        <div class="container" data-aos="fade-right">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Bebidas</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit magnam repudiandae tenetur ab cupiditate dolore at ipsa voluptates? Numquam quisquam.
+                </p>
+            </div>
+            <img class="event__image" src="./images/bebidas.jpg" alt="Aniversariante">
+        </div>
+    </section>
+    <section class="event event--sobremesas event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__detail">
+                <h2 class="event__detail__title">Sobremesas</h2>
+                <p class="event__detail__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit magnam repudiandae tenetur ab cupiditate dolore at ipsa voluptates? Numquam quisquam.
+                </p>
+            </div>
+            <img class="event__image" src="./images/sobremesas.jpg" alt="Aniversariante">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script src="scripts/main.js"></script>
+    
 </body>
 </html>
